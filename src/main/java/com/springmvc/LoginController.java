@@ -1,5 +1,6 @@
 package com.springmvc;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,8 +11,8 @@ import com.login.UserValidationService;
 
 @Controller
 public class LoginController {  
-	
-	UserValidationService checkUser=new UserValidationService();
+	@Autowired
+	UserValidationService checkUser;//=new UserValidationService(); we performed dependency injection
 	
 	@RequestMapping(value="/login",method=RequestMethod.GET )
 	public String showLoginPage()
