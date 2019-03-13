@@ -10,6 +10,6 @@
 <body>
 
 <p><b>Welcome ${pname} </b></p>
-<!-- <p><b>Your password :  ${password} </b></p> -->
+<p><b>Your password :  ${password} </b></p>
 </body>
 </html>
