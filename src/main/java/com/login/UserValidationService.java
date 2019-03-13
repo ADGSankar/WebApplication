@@ -1,5 +1,4 @@
-package com.first_webapp;
-
+package com.login;
 public class UserValidationService {
 	
 	public boolean isUserValid(String name,String password)
